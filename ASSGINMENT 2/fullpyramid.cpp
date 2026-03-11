@@ -11,14 +11,18 @@
 using namespace std;
 
 int main(){
-    for(int i = 1; i <= 5;i++){
+        for(int i = 1; i <= 5; i++) {
         
-        for(int j =1; j < 2*i  ; j++){
-            cout << " ";
-            cout << j;
+        for(int s = 1; s <= 5 - i; s++)
+            cout << "  ";
 
-        }
-        cout << "\n";
+        for(int j = i; j <= i + i - 1; j++)
+            cout << j << " ";
+
+        for(int j = i + i - 2; j >= i; j--)
+            cout << j << " ";
+
+        cout << endl;
+    }
     }
     
-}
